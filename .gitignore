@@ -1,0 +1,62 @@
+*.log
+*.png
+.*
+!.gitignore
+~*
+blog/ehthumbs.db
+blog/Thumbs.db
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore everything in the root except the "wp-content" directory.
+blog/*
+!blog/wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins" directory
+# "plugins" directory
+# "themes" directory
+blog/wp-content/*
+!blog/wp-content/mu-plugins/
+!blog/wp-content/plugins/
+!blog/wp-content/themes/
+
+# ignore these plugins from the core
+blog/wp-content/plugins/hello.php
+blog/wp-content/plugins/akismet/
+
+#ignore images
+*.png
+*.jpg
+*.jpeg
+*.ai
+*.svg
+*.gif
+
+error_log
+
+*.csv
+*.json
+
+/sql_config.json
